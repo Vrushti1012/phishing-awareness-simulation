@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Awareness Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .phishing-email {
+            background: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .email-header {
+            background: #d32f2f;
+            color: white;
+            padding: 15px;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .warning-banner {
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .email-body {
+            padding: 20px;
+            border: 2px dashed #d32f2f;
+        }
+
+        .fake-button {
+            background: #d32f2f;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .awareness-section {
+            background: #e8f5e9;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #4caf50;
+        }
+
+        .red { color: #d32f2f; font-weight: bold; }
+        .green { color: #2e7d32; font-weight: bold; }
+
+        h2 { color: #1a237e; }
+    </style>
+</head>
+<body>
+
+    <!-- FAKE PHISHING EMAIL SIMULATION -->
+    <div class="phishing-email">
+        <div class="warning-banner">
+            ⚠️ THIS IS A SIMULATED PHISHING EMAIL - FOR TRAINING ONLY ⚠️
+        </div>
+        <div class="email-header">
+            <b>From:</b> security@bank-alert-update.com<br>
+            <b>Subject:</b> 🚨 URGENT: Your Account Has Been Compromised!
+        </div>
+        <div class="email-body">
+            <p>Dear Valued Customer,</p>
+            <p>We have detected <b>suspicious activity</b> on your account.
+            Your account will be <b>SUSPENDED within 24 hours</b> if you
+            do not verify your details immediately!</p>
+            <p>Click below to verify your account now:</p>
+            <button class="fake-button" onclick="showWarning()">
+                🔒 Verify My Account Now
+            </button>
+            <p><small>If you do not respond, your account will be permanently deleted.</small></p>
+        </div>
+    </div>
+
+    <!-- AWARENESS SECTION -->
+    <div class="awareness-section">
+        <h2>🛡️ Phishing Awareness - Red Flags Found!</h2>
+
+        <p><span class="red">❌ Fake Sender Email:</span>
+        "bank-alert-update.com" is NOT a real bank domain!</p>
+
+        <p><span class="red">❌ Urgency Tactic:</span>
+        "24 hours" pressure is a classic phishing trick!</p>
+
+        <p><span class="red">❌ Threatening Language:</span>
+        "Account will be deleted" is used to scare you!</p>
+
+        <p><span class="red">❌ Suspicious Button:</span>
+        Never click unknown links in emails!</p>
+
+        <h2>✅ How To Stay Safe:</h2>
+        <p><span class="green">✔️ Always check sender email address</span></p>
+        <p><span class="green">✔️ Never click suspicious links</span></p>
+        <p><span class="green">✔️ Call your bank directly to verify</span></p>
+        <p><span class="green">✔️ Enable 2FA on all accounts</span></p>
+        <p><span class="green">✔️ Report phishing emails immediately</span></p>
+    </div>
+
+    <script>
+        function showWarning() {
+            alert("⚠️ PHISHING ALERT!\n\nYou clicked a suspicious link!\nIn a real attack, your data would now be stolen!\n\nAlways verify emails before clicking!");
+        }
+    </script>
+
+</body>
+</html>
